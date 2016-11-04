@@ -35,15 +35,15 @@
     //提醒数字颜色
     //firstView.tabBarItem.badgeColor = [UIColor yellowColor];
     //选中时的图片
-    firstView.tabBarItem.selectedImage = [UIImage imageNamed:@"user"];
+    //firstView.tabBarItem.selectedImage = [UIImage imageNamed:@"user"];
     //添加视图到标签栏
     //[self addChildViewController:firstView];
     
     //first page
     SecondViewController * secondView = [[SecondViewController alloc] init];
     secondView.view.backgroundColor = [UIColor greenColor];
-    secondView.tabBarItem.title = @"图表";
-    secondView.tabBarItem.image = [UIImage imageNamed:@"chart"];
+    secondView.tabBarItem.title = @"视频";
+    secondView.tabBarItem.image = [UIImage imageNamed:@"camera"];
     //[self addChildViewController:secondView];
     
     //first page
@@ -60,7 +60,7 @@
     fourthView.tabBarItem.image = [UIImage imageNamed:@"user"];
     //[self addChildViewController:fourthView];
     
-    self.viewControllers = @[firstView, secondView, thirdView, fourthView, fourthView, fourthView];
+    self.viewControllers = @[firstView, secondView, thirdView, fourthView];
     
     // 设置分栏的风格
     //self.tabBar.barStyle = UIBarStyleBlack;
@@ -72,7 +72,7 @@
     //self.tabBar.barTintColor = [UIColor brownColor];
     
     // 设置分栏元素项的颜色
-    self.tabBar.tintColor = [UIColor redColor];
+    //self.tabBar.tintColor = [UIColor redColor];
     
     // 设置分栏按钮的选中指定图片
     //self.tabBar.selectionIndicatorImage = [UIImage imageNamed:@"home"];
@@ -80,6 +80,10 @@
     //设置初始状态选中的下标
     self.selectedIndex = 2;
     
+    for (UITabBarItem *item in self.tabBar.items) {
+        //UIImageRenderingModeAlwaysOriginal: 始终绘制图片原始状态，不使用Tint Color
+        item.image = [item.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
     
     
     
