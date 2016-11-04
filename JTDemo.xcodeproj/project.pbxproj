@@ -15,6 +15,11 @@
 		E582CD481DC2E420000F64F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E582CD461DC2E420000F64F3 /* LaunchScreen.storyboard */; };
 		E582CD531DC2E420000F64F3 /* JTDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CD521DC2E420000F64F3 /* JTDemoTests.m */; };
 		E582CD5E1DC2E420000F64F3 /* JTDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CD5D1DC2E420000F64F3 /* JTDemoUITests.m */; };
+		E582CD6F1DC34556000F64F3 /* JTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CD6E1DC34556000F64F3 /* JTTabBarViewController.m */; };
+		E582CD721DC3473E000F64F3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CD711DC3473E000F64F3 /* FirstViewController.m */; };
+		E582CD751DC34750000F64F3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CD741DC34750000F64F3 /* SecondViewController.m */; };
+		E582CD781DC34774000F64F3 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CD771DC34774000F64F3 /* ThirdViewController.m */; };
+		E582CD7B1DC34792000F64F3 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CD7A1DC34792000F64F3 /* FourthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		E582CD591DC2E420000F64F3 /* JTDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E582CD5D1DC2E420000F64F3 /* JTDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTDemoUITests.m; sourceTree = "<group>"; };
 		E582CD5F1DC2E420000F64F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E582CD6D1DC34556000F64F3 /* JTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTabBarViewController.h; sourceTree = "<group>"; };
+		E582CD6E1DC34556000F64F3 /* JTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTabBarViewController.m; sourceTree = "<group>"; };
+		E582CD701DC3473E000F64F3 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E582CD711DC3473E000F64F3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		E582CD731DC34750000F64F3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E582CD741DC34750000F64F3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E582CD761DC34774000F64F3 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		E582CD771DC34774000F64F3 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		E582CD791DC34792000F64F3 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		E582CD7A1DC34792000F64F3 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +125,16 @@
 				E582CD461DC2E420000F64F3 /* LaunchScreen.storyboard */,
 				E582CD491DC2E420000F64F3 /* Info.plist */,
 				E582CD381DC2E420000F64F3 /* Supporting Files */,
+				E582CD6D1DC34556000F64F3 /* JTTabBarViewController.h */,
+				E582CD6E1DC34556000F64F3 /* JTTabBarViewController.m */,
+				E582CD701DC3473E000F64F3 /* FirstViewController.h */,
+				E582CD711DC3473E000F64F3 /* FirstViewController.m */,
+				E582CD731DC34750000F64F3 /* SecondViewController.h */,
+				E582CD741DC34750000F64F3 /* SecondViewController.m */,
+				E582CD761DC34774000F64F3 /* ThirdViewController.h */,
+				E582CD771DC34774000F64F3 /* ThirdViewController.m */,
+				E582CD791DC34792000F64F3 /* FourthViewController.h */,
+				E582CD7A1DC34792000F64F3 /* FourthViewController.m */,
 			);
 			path = JTDemo;
 			sourceTree = "<group>";
@@ -276,9 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E582CD7B1DC34792000F64F3 /* FourthViewController.m in Sources */,
+				E582CD751DC34750000F64F3 /* SecondViewController.m in Sources */,
+				E582CD6F1DC34556000F64F3 /* JTTabBarViewController.m in Sources */,
 				E582CD401DC2E420000F64F3 /* ViewController.m in Sources */,
+				E582CD721DC3473E000F64F3 /* FirstViewController.m in Sources */,
 				E582CD3D1DC2E420000F64F3 /* AppDelegate.m in Sources */,
 				E582CD3A1DC2E420000F64F3 /* main.m in Sources */,
+				E582CD781DC34774000F64F3 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JTTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    application.statusBarHidden = NO;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[JTTabBarViewController alloc] init];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
